@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0570681C2DA4FA8000D2AF38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681B2DA4FA8000D2AF38 /* Cocoa.framework */; };
-		0570681E2DA4FA8000D2AF38 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */; };
 		057068282DA4FA8000D2AF38 /* ThinkCutExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 057068192DA4FA8000D2AF38 /* ThinkCutExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05A12F572DA54522000A50E8 /* XcodeKit.framework in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05A12F5E2DA54777000A50E8 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */; };
+		05A12F5F2DA54777000A50E8 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +45,21 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				05A12F572DA54522000A50E8 /* XcodeKit.framework in Embed Foundation Extensions */,
 				057068282DA4FA8000D2AF38 /* ThinkCutExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05A12F602DA54777000A50E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05A12F5F2DA54777000A50E8 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -122,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0570681C2DA4FA8000D2AF38 /* Cocoa.framework in Frameworks */,
-				0570681E2DA4FA8000D2AF38 /* XcodeKit.framework in Frameworks */,
+				05A12F5E2DA54777000A50E8 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +255,7 @@
 				057068152DA4FA8000D2AF38 /* Sources */,
 				057068162DA4FA8000D2AF38 /* Frameworks */,
 				057068172DA4FA8000D2AF38 /* Resources */,
+				05A12F602DA54777000A50E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

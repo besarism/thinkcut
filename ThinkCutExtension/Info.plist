@@ -13,8 +13,8 @@
 					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SourceEditorCommand</string>
-					<key>XCSourceEditorCommandName</key>
-					<string>Source Editor Command</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Run ThinkCut Orchestrator</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
