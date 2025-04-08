@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0570681C2DA4FA8000D2AF38 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681B2DA4FA8000D2AF38 /* Cocoa.framework */; };
+		0570681E2DA4FA8000D2AF38 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */; };
+		057068282DA4FA8000D2AF38 /* ThinkCutExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 057068192DA4FA8000D2AF38 /* ThinkCutExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		057067F92DA4FA5C00D2AF38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 057067E62DA4FA5A00D2AF38;
 			remoteInfo = ThinkCut;
 		};
+		057068262DA4FA8000D2AF38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 057067DF2DA4FA5A00D2AF38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057068182DA4FA8000D2AF38;
+			remoteInfo = ThinkCutExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0570682D2DA4FA8000D2AF38 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				057068282DA4FA8000D2AF38 /* ThinkCutExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		057067E72DA4FA5A00D2AF38 /* ThinkCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057067F82DA4FA5C00D2AF38 /* ThinkCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		057068022DA4FA5C00D2AF38 /* ThinkCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		057068192DA4FA8000D2AF38 /* ThinkCutExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThinkCutExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0570681B2DA4FA8000D2AF38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		057068292DA4FA8000D2AF38 /* Exceptions for "ThinkCutExtension" folder in "ThinkCutExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 057068182DA4FA8000D2AF38 /* ThinkCutExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		057067E92DA4FA5A00D2AF38 /* ThinkCut */ = {
@@ -43,6 +83,14 @@
 		057068052DA4FA5C00D2AF38 /* ThinkCutUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ThinkCutUITests;
+			sourceTree = "<group>";
+		};
+		0570681F2DA4FA8000D2AF38 /* ThinkCutExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				057068292DA4FA8000D2AF38 /* Exceptions for "ThinkCutExtension" folder in "ThinkCutExtension" target */,
+			);
+			path = ThinkCutExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		057068162DA4FA8000D2AF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0570681C2DA4FA8000D2AF38 /* Cocoa.framework in Frameworks */,
+				0570681E2DA4FA8000D2AF38 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				057067E92DA4FA5A00D2AF38 /* ThinkCut */,
 				057067FB2DA4FA5C00D2AF38 /* ThinkCutTests */,
 				057068052DA4FA5C00D2AF38 /* ThinkCutUITests */,
+				0570681F2DA4FA8000D2AF38 /* ThinkCutExtension */,
+				0570681A2DA4FA8000D2AF38 /* Frameworks */,
 				057067E82DA4FA5A00D2AF38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				057067E72DA4FA5A00D2AF38 /* ThinkCut.app */,
 				057067F82DA4FA5C00D2AF38 /* ThinkCutTests.xctest */,
 				057068022DA4FA5C00D2AF38 /* ThinkCutUITests.xctest */,
+				057068192DA4FA8000D2AF38 /* ThinkCutExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0570681A2DA4FA8000D2AF38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0570681B2DA4FA8000D2AF38 /* Cocoa.framework */,
+				0570681D2DA4FA8000D2AF38 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				057067E32DA4FA5A00D2AF38 /* Sources */,
 				057067E42DA4FA5A00D2AF38 /* Frameworks */,
 				057067E52DA4FA5A00D2AF38 /* Resources */,
+				0570682D2DA4FA8000D2AF38 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				057068272DA4FA8000D2AF38 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				057067E92DA4FA5A00D2AF38 /* ThinkCut */,
@@ -163,6 +234,28 @@
 			productReference = 057068022DA4FA5C00D2AF38 /* ThinkCutUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		057068182DA4FA8000D2AF38 /* ThinkCutExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0570682A2DA4FA8000D2AF38 /* Build configuration list for PBXNativeTarget "ThinkCutExtension" */;
+			buildPhases = (
+				057068152DA4FA8000D2AF38 /* Sources */,
+				057068162DA4FA8000D2AF38 /* Frameworks */,
+				057068172DA4FA8000D2AF38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0570681F2DA4FA8000D2AF38 /* ThinkCutExtension */,
+			);
+			name = ThinkCutExtension;
+			packageProductDependencies = (
+			);
+			productName = ThinkCutExtension;
+			productReference = 057068192DA4FA8000D2AF38 /* ThinkCutExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 057067E62DA4FA5A00D2AF38;
 					};
+					057068182DA4FA8000D2AF38 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = 057067E22DA4FA5A00D2AF38 /* Build configuration list for PBXProject "ThinkCut" */;
@@ -203,6 +299,7 @@
 				057067E62DA4FA5A00D2AF38 /* ThinkCut */,
 				057067F72DA4FA5C00D2AF38 /* ThinkCutTests */,
 				057068012DA4FA5C00D2AF38 /* ThinkCutUITests */,
+				057068182DA4FA8000D2AF38 /* ThinkCutExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		057068002DA4FA5C00D2AF38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057068172DA4FA8000D2AF38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		057068152DA4FA8000D2AF38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 057067E62DA4FA5A00D2AF38 /* ThinkCut */;
 			targetProxy = 057068032DA4FA5C00D2AF38 /* PBXContainerItemProxy */;
+		};
+		057068272DA4FA8000D2AF38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 057068182DA4FA8000D2AF38 /* ThinkCutExtension */;
+			targetProxy = 057068262DA4FA8000D2AF38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,6 +625,60 @@
 			};
 			name = Release;
 		};
+		0570682B2DA4FA8000D2AF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThinkCutExtension/ThinkCutExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SGU6TJDJ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThinkCutExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThinkCutExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besar.ThinkCut.ThinkCutExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0570682C2DA4FA8000D2AF38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThinkCutExtension/ThinkCutExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SGU6TJDJ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThinkCutExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThinkCutExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = besar.ThinkCut.ThinkCutExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,6 +714,15 @@
 			buildConfigurations = (
 				057068132DA4FA5C00D2AF38 /* Debug */,
 				057068142DA4FA5C00D2AF38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0570682A2DA4FA8000D2AF38 /* Build configuration list for PBXNativeTarget "ThinkCutExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0570682B2DA4FA8000D2AF38 /* Debug */,
+				0570682C2DA4FA8000D2AF38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
